@@ -1,13 +1,19 @@
+<?include_once "common.php";?>
+<?include_once "common.php";?>
+<?include_once "database.php";?>
+
+<?= $host;?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" initial-scale="1">
 		<!-- 스타일 시트 참조 / css폴더의 bootstrap.css 참조 -->
-		<title>PHP 게시판 웹 사이트</title>
+		<title>새로운 게시판</title>
 		<link rel="stylesheet" href="css/bootstrap.css"> 
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script type="text/javascript" src="/js/bootstrap.js"></script>
 		<script src="./js/login.js"></script>
 	
 	</head>
@@ -22,11 +28,11 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="main.php">PHP 게시판 웹 사이트</a>
+				<a class="navbar-brand" href="new_index.php">새로운 게시판</a>
 			</div>   
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="main.php">메인</a></li>
+					<li class="active"><a href="new_index.php">메인</a></li>
 					<li><a href="list.php">게시판</a></li>
 				</ul>  
 				<ul class="nav navbar-nav navbar-right">
@@ -45,7 +51,7 @@
 			<div class="col-lg-4"></div>
 			<div class="col-lg-4">
 				<div class="jumbotron" style="padding-top: 20px;">
-					<form name="loginSbmt" id="loginSbmt" method="post" action="login_ok.php">
+					<form name="loginSbmt" id="loginSbmt" method="post" action="new_login_ok.php">
 						<h3 style="text-align: center">로그인 화면</h3>
 						<div class="col-lg-4"></div>
 						<div class="form-group">
@@ -55,7 +61,9 @@
 							<input type="password" class="form-control" placeholder="비밀번호" name="pass" maxlength="20">
 						</div>
 						
-						<a href="#"><span class="btn btn-primary form-control" onclick="check_input()">로그인</span></a>
+						<a href="#"><span class="btn btn-primary form-control" onclick="check_input()">로그인</span></a><hr>
+						<a href="join.php"><span class="btn btn-primary form-control" onclick="check_input()">회원가입</span></a>
+
 					</form>
 				</div>
 			</div>
