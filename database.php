@@ -10,6 +10,7 @@ $db_name = "frontdb";
 // $conn = mysqli_connect("localhost", "sunho", "1234", "frontdb");
 // echo $host;
 $conn = new mysqli($host, $user, $pw, $db_name);
+mysqli_set_charset($conn, "utf8");
 
 // if($conn){ echo "Connection established"."<br>"; }
 // else{ die( 'Could not connect: ' . mysqli_error($conn) ); }

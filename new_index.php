@@ -55,13 +55,13 @@
 						<h3 style="text-align: center">로그인 화면</h3>
 						<div class="col-lg-4"></div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="아이디" name="id" maxlength="15">
+							<input type="text" class="form-control" placeholder="아이디" name="mb_id" maxlength="15">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" placeholder="비밀번호" name="pass" maxlength="20">
+							<input type="password" class="form-control" placeholder="비밀번호" name="mb_password" maxlength="20">
 						</div>
 						
-						<a href="#"><span class="btn btn-primary form-control" onclick="check_input()">로그인</span></a><hr>
+						<a href="new_login_ok.php"><span class="btn btn-primary form-control" onclick="check_input()">로그인</span></a><hr>
 						<a href="join.php"><span class="btn btn-primary form-control" onclick="check_input()">회원가입</span></a>
 
 					</form>
