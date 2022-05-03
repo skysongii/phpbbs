@@ -11,6 +11,6 @@ include_once "database.php";
     // $select_result = mysql_query($select_query);
     $row = $select_result -> fetch_array();
     json_encode($row);
-
+ 
     
     ?>
